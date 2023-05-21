@@ -6,18 +6,18 @@ import page1 from './components/page1';
 function App() {
 
     return (
-        <div>
-            <Navbar/>
-            <div class="container-fluid" id="main">
-                <div class="row row-offcanvas row-offcanvas-left">
-                    <Sidebar />
-                    <Dashboard />
-                </div>
-            </div>
+        // <div>
+        //     <Navbar/>
+        //     <div class="container-fluid" id="main">
+        //         <div class="row row-offcanvas row-offcanvas-left">
+        //             <Sidebar />
+        //             <Dashboard />
+        //         </div>
+        //     </div>
 
 
-        </div>
-        // <page1 />
+        // </div>
+        <page1 />
 
 
     );
