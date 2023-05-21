@@ -2,21 +2,24 @@ import React from 'react';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
- 
-function App(){
- 
-        return (
-            <div>
-                {/* <Navbar/> */}
-                <div class="container-fluid" id="main">
-                 <div class="row row-offcanvas row-offcanvas-left">
-                   <Sidebar/>
-                  <Dashboard/>
-                
-             </div>
-            </div>  
-        </div>  
-        );
-    }
-  
+import page1 from './components/page1';
+function App() {
+
+    return (
+        <div>
+            <Navbar/>
+            <div class="container-fluid" id="main">
+                <div class="row row-offcanvas row-offcanvas-left">
+                    <Sidebar />
+                    <Dashboard />
+                </div>
+            </div>
+            {/* <page1 /> */}
+
+        </div>
+
+
+    );
+}
+
 export default App

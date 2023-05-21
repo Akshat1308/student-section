@@ -2,12 +2,12 @@ import React from 'react'
  
 export const Navbar = () => {
     return (
-            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark mb-3">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-info mb-3">
                 <div class="flex-row d-flex">
                     <button type="button" class="navbar-toggler mr-2 " data-toggle="offcanvas" title="Toggle responsive left sidebar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#" title="Free Bootstrap 4 Admin Template">Record Book</a>
+                    <a class="navbar-brand" href="#" title="Free Bootstrap 4 Admin Template">Profile page</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -17,9 +17,9 @@ export const Navbar = () => {
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
                         </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
                             <a class="nav-link" href="//www.codeply.com">Link</a>
-                        </li>
+                        </li> */}
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">

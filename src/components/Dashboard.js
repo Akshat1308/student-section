@@ -21,9 +21,9 @@ const Dashboard = () => {
     return (
         <div class="col main pt-5">
 
-            <div class="text-center bg-light mb-4 " >
+            {/* <div class="text-center bg-light mb-4 " >
                 <h4>Student Profile page</h4>
-            </div>
+            </div> */}
             <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">×</span>
@@ -32,7 +32,7 @@ const Dashboard = () => {
                 <strong>Data and Records</strong> Learn more about employee
             </div>
             {/* <div class = "ms-5"> */}
-            <div class="row mb-4 ">
+            <div class="row mb-4 mt-5">
 
                 <div class="col-xl-3 col-sm-6 mx-auto ">
                     <div class="card bg-success text-white h-100">
@@ -70,7 +70,7 @@ const Dashboard = () => {
                     <div class="card text-white bg-warning h-100">
                         <div class="card-body">
                             <div class="rotate">
-                            <i class="fa-solid fa-wallet fa-2x"></i>
+                                <i class="fa-solid fa-wallet fa-2x"></i>
                             </div>
                             <h6 class="text-uppercase">Wallet balance</h6>
                             <h1 class="display-4">36</h1>
