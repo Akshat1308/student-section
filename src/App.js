@@ -14,9 +14,10 @@ function App() {
                     <Dashboard />
                 </div>
             </div>
-            {/* <page1 /> */}
+
 
         </div>
+        // <page1 />
 
 
     );

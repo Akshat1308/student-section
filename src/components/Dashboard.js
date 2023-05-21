@@ -24,13 +24,7 @@ const Dashboard = () => {
             {/* <div class="text-center bg-light mb-4 " >
                 <h4>Student Profile page</h4>
             </div> */}
-            <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <strong>Data and Records</strong> Learn more about employee
-            </div>
+
             {/* <div class = "ms-5"> */}
             <div class="row mb-4 mt-5">
 
@@ -38,7 +32,8 @@ const Dashboard = () => {
                     <div class="card bg-success text-white h-100">
                         <div class="card-body bg-success" style={{ backgroundColor: "#57b960" }}>
                             <div class="rotate">
-                                <i class="fa-solid fa-book-open-reader fa-2x"></i>                            </div>
+                                <i class="fa-solid fa-book-open-reader fa-2x"></i>
+                            </div>
                             <h6 class="text-uppercase">Total courses registered</h6>
                             <h1 class="display-4">134</h1>
                         </div>
