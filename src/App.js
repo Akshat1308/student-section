@@ -2,7 +2,9 @@ import React from 'react';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
-import page1 from './components/page1';
+import Page1 from './components/Page1';
+import { Route, Routes } from "react-router-dom";
+
 function App() {
 
     return (
@@ -17,7 +19,11 @@ function App() {
 
 
         // </div>
-        <page1 />
+        // <Routes>
+        //     <  Route path="/" component={Page1} />
+
+        // </Routes>
+        <Page1/>
 
 
     );

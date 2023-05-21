@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page1 = () => {
+const Page1 = () => {
     return (
         <div>
-            {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-info">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Navbar</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +38,201 @@ const page1 = () => {
                         </form>
                     </div>
                 </div>
-            </nav> */}
-            <h1>hello</h1>
-        </div>
+            </nav>
+            <h3 className="text-center mt-5">Available Courses</h3>
+            <div class="row mb-4 mt-5 ">
+
+                <div className="col mb-4 ml-5">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4 ml-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4 mt-5 ">
+
+                <div className="col mb-4 ml-5">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4 ml-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 className="text-center mt-5">Available Events</h3>
+            <div class="row mb-4 mt-5 ">
+
+                <div className="col mb-4 ml-5">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4 ml-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4 mt-5 ">
+
+                <div className="col mb-4 ml-5">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col mb-4 ml-4">
+
+                    <div class="card" style={{ width: '18rem' }}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div >
     )
 }
-export default page1
+export default Page1
