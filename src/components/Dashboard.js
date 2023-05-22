@@ -25,16 +25,22 @@ const Dashboard = () => {
               <table class="table table-striped">
                 <thead class="thead-light">
                   <tr>
-                    <th style={{ backgroundColor: "#89D5D2" }}>No</th>
-                    <th style={{ backgroundColor: "#89D5D2" }}>Label</th>
-                    <th style={{ backgroundColor: "#89D5D2" }}>Header</th>
-                    <th style={{ backgroundColor: "#89D5D2" }}>Column</th>
-                    <th style={{ backgroundColor: "#89D5D2" }}>Record Data</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>No</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Label</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Header</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Column</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Record Data</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {record.slice(0, 5).map((output) => (
-                    <tr key={output.id}>
+                  {record.slice(0, 5).map((output, index) => (
+                    <tr
+                      key={output.id}
+                      style={{
+                        backgroundColor:
+                          index % 2 === 0 ? "#c2d8e8" : "#aecbe1",
+                      }}
+                    >
                       <td>{output.id}</td>
                       <td>{output.name}</td>
                       <td>{output.email}</td>
@@ -52,36 +58,41 @@ const Dashboard = () => {
           <div
             class="card  text-white h-95 "
             style={{
+              height: "250px",
               marginLeft: "20px",
-              marginTop: "30px",
-              backgroundColor: "#35B5AC",
+              marginTop: "54px",
+              backgroundColor: "#498abc",
             }}
           >
             <div class="card-body ">
               <div class="rotate">
                 <i class="fa-solid fa-book-open-reader fa-2x"></i>
               </div>
-              <h6 class="text-uppercase">Total courses registered</h6>
-              <h1 class="display-6" >134</h1>
+              <h6 class="text-uppercase" style={{ marginTop: "20px" }}>
+                Total courses registered
+              </h6>
+              <h1 class="display-6">134</h1>
             </div>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div
-            class="card text-white  h-95"
+            class="card text-white  "
             style={{
-              
+              height: "250px",
               marginLeft: "20px",
-              marginTop: "30px",
-              backgroundColor: "#35B5AC",
+              marginTop: "54px",
+              backgroundColor: "#498abc",
             }}
           >
             <div class="card-body ">
               <div class="rotate">
                 <i class="fa-regular fa-calendar-days fa-2x"></i>
               </div>
-              <h6 class="text-uppercase">Total events registered</h6>
+              <h6 class="text-uppercase" style={{ marginTop: "20px" }}>
+                Total events registered
+              </h6>
               <h1 class="display-6">125</h1>
             </div>
           </div>

@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <nav
       className="navbar fixed-top navbar-expand-md navbar-dark  mb-3"
-      style={{ backgroundColor: "#19A7CE" }}
+      style={{ backgroundColor: "#498abc" }}
     >
       <div className="flex-row d-flex">
         <button
