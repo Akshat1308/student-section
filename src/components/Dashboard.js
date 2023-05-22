@@ -54,7 +54,7 @@ const Dashboard = () => {
             style={{
               marginLeft: "20px",
               marginTop: "30px",
-              backgroundColor: "#35B5AC",
+              backgroundColor: "#E57C23",
             }}
           >
             <div class="card-body ">
@@ -73,7 +73,7 @@ const Dashboard = () => {
             style={{
               marginLeft: "20px",
               marginTop: "30px",
-              backgroundColor: "#35B5AC",
+              backgroundColor: "#E57C23",
             }}
           >
             <div class="card-body ">

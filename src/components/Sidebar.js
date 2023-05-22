@@ -5,7 +5,7 @@ const Sidebar = () => {
       class="col-md-3 col-lg-2 sidebar-offcanvas pl-0"
       id="sidebar"
       role="navigation"
-      style={{ backgroundColor: "#35B5AC" }}
+      style={{ backgroundColor: "#19A7CE" }}
     >
       <ul class="nav flex-column sticky-top pl-0 pt-5 p-3 mt-3 ">
         <li class="nav-item mb-2 mt-3">
