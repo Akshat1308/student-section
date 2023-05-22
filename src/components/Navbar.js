@@ -19,8 +19,9 @@ export const Navbar = () => {
           className="navbar-brand"
           href="#"
           title="Free Bootstrap 4 Admin Template"
+          style={{ fontSize: "18px" }}
         >
-          Profile page
+          Profile Page
         </a>
       </div>
       <button
@@ -35,7 +36,10 @@ export const Navbar = () => {
         <ul className="navbar-nav">
           <Link to="/">
             <li className="nav-item active">
-              <a className="nav-link">
+              <a
+                className="nav-link"
+                style={{ fontSize: "18px" }}
+              >
                 First Page<span className="sr-only">first page</span>
               </a>
             </li>
@@ -70,11 +74,7 @@ export const Navbar = () => {
               <i className="fas fa-envelope-open-text"></i>
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link waves-effect waves-light text-white">
-              <i className="fas fa-align-justify"></i>
-            </a>
-          </li>
+      
         </ul>
       </div>
     </nav>

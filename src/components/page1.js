@@ -11,7 +11,11 @@ const Page1 = () => {
             className="container-fluid"
             style={{ backgroundColor: "#498abc" }}
           >
-            <a className="navbar-brand" href="#" style={{ color: "#000000",fontWeight: 'bold', fontFamily: 'Roboto',fontSize:'18px' }}>
+            <a
+              className="navbar-brand"
+              href="#"
+              style={{ color: "white", fontSize: "18px" }}
+            >
               Navbar
             </a>
             <button
@@ -36,7 +40,7 @@ const Page1 = () => {
                     <a
                       className="nav-link active"
                       aria-current="page"
-                      style={{ color: "#000000",fontWeight: 'bold', fontFamily: 'Roboto',fontSize:'18px' }}
+                      style={{ color: "white", fontSize: "18px" }}
                     >
                       Second page
                     </a>

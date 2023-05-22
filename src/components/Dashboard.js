@@ -17,7 +17,7 @@ const Dashboard = () => {
     <div class="col main pt-5">
       <div class="row mt-3">
         <div class="col-lg-7 col-md-6 col-sm-12">
-          <h5 class="mt-3 mb-3 text-secondary">
+          <h5 class="mt-3 mb-3 text-dark">
             Check More Records of Employees
           </h5>
           <div class="table-responsive">

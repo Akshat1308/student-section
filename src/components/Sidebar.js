@@ -9,19 +9,19 @@ const Sidebar = () => {
     >
       <ul class="nav flex-column sticky-top pl-0 pt-5 p-3 mt-3 ">
         <li class="nav-item mb-2 mt-3">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             <h5>Students name</h5>
           </a>
         </li>
         <li class="nav-item mb-2 ">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link " href="#" style={{color:"white"}}>
             <i class="fas fa-user font-weight-bold"></i>{" "}
             <span className="ml-3">Overview</span>
           </a>
         </li>
         <li class="nav-item mb-2">
           <a
-            class="nav-link text-dark"
+            class="nav-link text-white"
             href="#submenu1"
             data-toggle="collapse"
             data-target="#submenu1"
@@ -35,12 +35,12 @@ const Sidebar = () => {
             aria-expanded="false"
           >
             <li class="nav-item mb-2 ">
-              <a class="nav-link text-dark" href="">
+              <a class="nav-link text-white" href="">
                 <i class="fas fa-book-reader"></i> Data Report{" "}
               </a>
             </li>
             <li class="nav-item mb-2 ">
-              <a class="nav-link text-dark" href="">
+              <a class="nav-link text-white" href="">
                 {" "}
                 <i class="fas fa-book-medical"></i> File Report{" "}
               </a>
@@ -48,42 +48,42 @@ const Sidebar = () => {
           </ul>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             <i class="far fa-chart-bar font-weight-bold"></i>{" "}
             <span className="ml-3">Analytics</span>
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             <i class="fas fa-file-export font-weight-bold"></i>
             <span className="ml-3">Export</span>
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             <i class="fas fa-tablet-alt font-weight-bold"></i>
             <span className="ml-3">Snippets</span>
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             <i class="fas fa-atom font-weight-bold"></i>{" "}
             <span className="ml-3">Flex</span>
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             <i class="far fa-folder font-weight-bold"></i>{" "}
             <span className="ml-3">Layouts</span>
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             Templates
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link text-dark" href="#">
+          <a class="nav-link text-white" href="#">
             Themes
           </a>
         </li>
