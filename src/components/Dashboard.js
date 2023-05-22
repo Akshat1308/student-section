@@ -50,11 +50,11 @@ const Dashboard = () => {
 
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div
-            class="card  text-white h-70 "
+            class="card  text-white h-95 "
             style={{
               marginLeft: "20px",
-              marginTop: "30px",
-              backgroundColor: "#35B5AC",
+              marginTop: "53px",
+              backgroundColor: "#E57C23",
             }}
           >
             <div class="card-body ">
@@ -62,18 +62,19 @@ const Dashboard = () => {
                 <i class="fa-solid fa-book-open-reader fa-2x"></i>
               </div>
               <h6 class="text-uppercase">Total courses registered</h6>
-              <h1 class="display-4">134</h1>
+              <h1 class="display-6" >134</h1>
             </div>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div
-            class="card text-white  h-70"
+            class="card text-white  h-95"
             style={{
+              
               marginLeft: "20px",
-              marginTop: "30px",
-              backgroundColor: "#35B5AC",
+              marginTop: "53px",
+              backgroundColor: "#E57C23",
             }}
           >
             <div class="card-body ">
@@ -81,7 +82,7 @@ const Dashboard = () => {
                 <i class="fa-regular fa-calendar-days fa-2x"></i>
               </div>
               <h6 class="text-uppercase">Total events registered</h6>
-              <h1 class="display-4">125</h1>
+              <h1 class="display-6">125</h1>
             </div>
           </div>
         </div>
