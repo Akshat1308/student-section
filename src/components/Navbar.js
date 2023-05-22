@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export const Navbar = () => {
     return (
         <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-info mb-3">
@@ -14,9 +14,10 @@ export const Navbar = () => {
             </button>
             <div className="navbar-collapse collapse" id="collapsingNavbar">
                 <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">Home</span></a>
-                    </li>
+                    <Link to="/">
+                        <li className="nav-item active">
+                            <a className="nav-link" >First Page<span className="sr-only">first page</span></a>
+                        </li></Link>
                     {/* <li className="nav-item">
                             <a className="nav-link" href="//www.codeply.com">Link</a>
                         </li> */}

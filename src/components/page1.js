@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Page1 = () => {
     return (
         <div>
@@ -11,9 +11,9 @@ const Page1 = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
+                            <Link to="/profile">  <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" >Second page</a>
+                            </li></Link>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Link</a>
                             </li>
@@ -34,7 +34,7 @@ const Page1 = () => {
                         </ul>
                         <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                            <button className="btn btn-outline-dark" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
