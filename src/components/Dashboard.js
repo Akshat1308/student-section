@@ -33,7 +33,7 @@ const Dashboard = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {record.slice(0, 5).map((output, index) => (
+                  {record.map((output, index) => (
                     <tr
                       key={output.id}
                       style={{
@@ -45,7 +45,7 @@ const Dashboard = () => {
                       <td>{output.name}</td>
                       <td>{output.email}</td>
                       <td>{output.username}</td>
-                      <td>{output.website}</td>
+                      <td>{output.address.street}</td>
                     </tr>
                   ))}
                 </tbody>
