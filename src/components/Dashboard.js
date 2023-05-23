@@ -26,10 +26,10 @@ const Dashboard = () => {
                 <thead class="thead-light">
                   <tr>
                     <th style={{ backgroundColor: "#85b1d2" }}>No</th>
-                    <th style={{ backgroundColor: "#85b1d2" }}>Label</th>
-                    <th style={{ backgroundColor: "#85b1d2" }}>Header</th>
-                    <th style={{ backgroundColor: "#85b1d2" }}>Column</th>
-                    <th style={{ backgroundColor: "#85b1d2" }}>Record Data</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Courses/Events</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Organisation</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Start date</th>
+                    <th style={{ backgroundColor: "#85b1d2" }}>Contact</th>
                   </tr>
                 </thead>
                 <tbody>
