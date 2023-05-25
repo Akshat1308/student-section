@@ -121,79 +121,79 @@ const Page1 = () => {
             {/* <h3 className="text-center mt-5" style={{ fontFamily: "cursive" }}>
           Available Courses
         </h3> */}
+            <div style={{ overflowX: "hidden" }}>
+                <h3
+                    className="text-center mt-5"
+                    style={{
+                        background: "-webkit-linear-gradient(#00b8ff, #0047ab)",
+                        "-webkit-background-clip": "text",
+                        "-webkit-text-fill-color": "transparent",
+                        fontFamily: "cursive",
+                    }}
+                >
+                    Available Courses
+                </h3>
 
-            <h3
-                className="text-center mt-5"
-                style={{
-                    background: "-webkit-linear-gradient(#00b8ff, #0047ab)",
-                    "-webkit-background-clip": "text",
-                    "-webkit-text-fill-color": "transparent",
-                    fontFamily: "cursive",
-                }}
-            >
-                Available Courses
-            </h3>
+                <div class="row mb-4 mt-5 ">
+                    {record.map((output, index) => (
+                        <div className="col mb-4">
 
-            <div class="row mb-4 mt-5 ">
-                {record.map((output, index) => (
-                    <div className="col mb-4">
-
-                        <div class="card" style={{ width: "18rem" }}>
-                            <img
-                                src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                                class="card-img-top"
-                                alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">{output.id}</h5>
-                                <p class="card-text">
-                                    {output.name}
-                                </p>
-                                <a href="#" class="btn btn-primary">
-                                    Go somewhere
-                                </a>
+                            <div class="card" style={{ width: "18rem" }}>
+                                <img
+                                    src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                                    class="card-img-top"
+                                    alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">{output.id}</h5>
+                                    <p class="card-text">
+                                        {output.name}
+                                    </p>
+                                    <a href="#" class="btn btn-primary">
+                                        Go somewhere
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
+                    ))}
+                </div>
 
-                    </div>
-                ))}
-            </div>
+                <h3
+                    className="text-center mt-5"
+                    style={{
+                        background: "-webkit-linear-gradient(#00b8ff, #0047ab)",
+                        "-webkit-background-clip": "text",
+                        "-webkit-text-fill-color": "transparent",
+                        fontFamily: "cursive",
+                    }}
+                >
+                    Available Events
+                </h3>
+                <div class="row mb-4 mt-5 ">
+                    {record.map((output, index) => (
+                        <div className="col mb-4">
 
-            <h3
-                className="text-center mt-5"
-                style={{
-                    background: "-webkit-linear-gradient(#00b8ff, #0047ab)",
-                    "-webkit-background-clip": "text",
-                    "-webkit-text-fill-color": "transparent",
-                    fontFamily: "cursive",
-                }}
-            >
-                Available Events
-            </h3>
-            <div class="row mb-4 mt-5 ">
-                {record.map((output, index) => (
-                    <div className="col mb-4">
-
-                        <div class="card" style={{ width: "18rem" }}>
-                            <img
-                                src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                                class="card-img-top"
-                                alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">{output.id}</h5>
-                                <p class="card-text">
-                                    {output.name}
-                                </p>
-                                <a href="#" class="btn btn-primary">
-                                    Go somewhere
-                                </a>
+                            <div class="card" style={{ width: "18rem" }}>
+                                <img
+                                    src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                                    class="card-img-top"
+                                    alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">{output.id}</h5>
+                                    <p class="card-text">
+                                        {output.name}
+                                    </p>
+                                    <a href="#" class="btn btn-primary">
+                                        Go somewhere
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
-                ))}
-            </div>
+                        </div>
+                    ))}
+                </div></div >
         </div>
     );
 }
