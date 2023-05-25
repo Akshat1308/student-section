@@ -150,7 +150,7 @@ const Page1 = () => {
                                         {output.name}
                                     </p>
                                     <a href="#" class="btn btn-primary">
-                                        Go somewhere
+                                        register
                                     </a>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@ const Page1 = () => {
                                         {output.name}
                                     </p>
                                     <a href="#" class="btn btn-primary">
-                                        Go somewhere
+                                        register
                                     </a>
                                 </div>
                             </div>
