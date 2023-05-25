@@ -1,6 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from "react";
+
 const Page1 = () => {
+    const [record, setRecord] = useState([]);
+
+    const getData = () => {
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then((resposne) => resposne.json())
+            .then((res) => setRecord(res));
+    };
+
+    useEffect(() => {
+        getData();
+    });
     return (
         <div>
             <nav
@@ -122,162 +135,29 @@ const Page1 = () => {
             </h3>
 
             <div class="row mb-4 mt-5 ">
-                <div className="col mb-4 ml-5">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
+                {record.map((output, index) => (
+                    <div className="col mb-4">
+
+                        <div class="card" style={{ width: "18rem" }}>
+                            <img
+                                src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                                class="card-img-top"
+                                alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">{output.id}</h5>
+                                <p class="card-text">
+                                    {output.name}
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Go somewhere
+                                </a>
+                            </div>
                         </div>
+
                     </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4 ml-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
-            <div class="row mb-4 mt-5 ">
-                <div className="col mb-4 ml-5">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4 ml-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* <h3 className="text-center mt-5">Available Events</h3> */}
 
             <h3
                 className="text-center mt-5"
@@ -291,160 +171,28 @@ const Page1 = () => {
                 Available Events
             </h3>
             <div class="row mb-4 mt-5 ">
-                <div className="col mb-4 ml-5">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
+                {record.map((output, index) => (
+                    <div className="col mb-4">
+
+                        <div class="card" style={{ width: "18rem" }}>
+                            <img
+                                src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                                class="card-img-top"
+                                alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">{output.id}</h5>
+                                <p class="card-text">
+                                    {output.name}
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Go somewhere
+                                </a>
+                            </div>
                         </div>
+
                     </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4 ml-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-4 mt-5 ">
-                <div className="col mb-4 ml-5">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4 ml-4">
-                    <div class="card" style={{ width: "18rem" }}>
-                        <img
-                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
-                            class="card-img-top"
-                            alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                Go somewhere
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
