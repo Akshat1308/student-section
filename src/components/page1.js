@@ -158,7 +158,7 @@ const Page1 = () => {
 
                 <div class="row mb-4 mt-5 ">
                     {record.map((output, index) => (
-                        <div style={{ marginLeft: "40px" }}>
+                        <div style={{ marginLeft: "55px" }}>
                             <div className="col mb-4">
                                 <div class="card" style={{ width: "18rem" }}>
                                     <img
@@ -194,7 +194,7 @@ const Page1 = () => {
                 </h3>
                 <div class="row mb-4 mt-5 ">
                     {record.map((output, index) => (
-                        <div style={{ marginLeft: "40px" }}>
+                        <div style={{ marginLeft: "55px" }}>
                             <div className="col mb-4">
                                 <div class="card" style={{ width: "18rem" }}>
                                     <img
