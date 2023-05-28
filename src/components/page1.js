@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from "react";
-
+// import BackgroundImage from "../components/bg3.png"
+import BackgroundImage from "../components/bg2.jpg"
 const Page1 = () => {
     const [record, setRecord] = useState([]);
 
@@ -143,35 +144,62 @@ const Page1 = () => {
           Available Courses
         </h3> */}
             <div style={{ overflowX: "hidden" }}>
-                <h3
+                <div
                     className="text-center mt-5"
                     style={{
-                        background: "-webkit-linear-gradient(#00b8ff, #ff8c00 99%)",
-                        "-webkit-background-clip": "text",
-                        fontWeight: "bold",
-                        "-webkit-text-fill-color": "transparent",
+                        display: "grid",
+                        placeItems: "center",
+                        position: "relative",
+                        backgroundImage: `url(${BackgroundImage})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                        backgroundSize: "100% 100%", // Update backgroundSize to "100% 100%"
+                        maxWidth: "25%",
+                        maxHeight: "14vh",
+                        fontWeight: "bolder",
                         fontFamily: "cursive",
+                        fontSize: "29px",
+                        padding: "10px",
+                        color: "white",
+                        margin: "0 auto", // Center horizontally using auto margins
                     }}
                 >
-                    Available Courses
-                </h3>
+                    <h3
+                        style={{
+                            display: "inline",
+                            padding: "10px 20px",
+                        }}
+                    >
+                        Available Courses
+                    </h3>
+                </div>
+
+
 
                 <div class="row mb-4 mt-5 ">
                     {record.map((output, index) => (
-                        <div style={{ marginLeft: "55px" }}>
+                        <div style={{ marginLeft: "90px" }}>
                             <div className="col mb-4">
-                                <div class="card" style={{ width: '18rem', border: '1px solid #ddd' }}>
+                                <div class="card" style={{ width: '15rem' }}>
                                     <img
                                         src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
                                         class="card-img-top"
                                         alt="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
+                                        style={{ borderBottom: '2px solid black' }}
+
                                     />
                                     <div class="card-body">
                                         <h5 class="card-title">{output.id}</h5>
-                                        <p class="card-text">{output.name}</p>
-                                        <a href="#" class="btn btn-primary">
-                                            register
-                                        </a>
+                                        <p class="card-text">{output.company.catchPhrase.length > 50 ? `${output.company.catchPhrase.slice(0, 50)}...` : output.company.catchPhrase}</p>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <a href="#" className="btn btn-primary" >
+                                                Register
+                                            </a>
+                                            <p style={{ color: "#38E54D", fontWeight: "bold", marginRight: "10px", marginLeft: "0", marginTop: "0", marginBottom: "0" }}>Price: 12$</p>
+                                        </div>
+
+
+
                                     </div>
                                 </div>
                             </div>
