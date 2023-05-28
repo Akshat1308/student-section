@@ -160,7 +160,7 @@ const Page1 = () => {
                     {record.map((output, index) => (
                         <div style={{ marginLeft: "55px" }}>
                             <div className="col mb-4">
-                                <div class="card" style={{ width: "18rem" }}>
+                                <div class="card" style={{ width: '18rem', border: '1px solid #ddd' }}>
                                     <img
                                         src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=360"
                                         class="card-img-top"
@@ -179,7 +179,7 @@ const Page1 = () => {
                     ))}
                 </div>
 
-                <h3
+                {/* <h3
                     className="text-center mt-5"
                     style={{
                         background: "-webkit-linear-gradient(#00b8ff, #ff8c00 99%)",
@@ -191,8 +191,8 @@ const Page1 = () => {
                     }}
                 >
                     Available Events
-                </h3>
-                <div class="row mb-4 mt-5 ">
+                </h3> */}
+                {/* <div class="row mb-4 mt-5 ">
                     {record.map((output, index) => (
                         <div style={{ marginLeft: "55px" }}>
                             <div className="col mb-4">
@@ -213,7 +213,7 @@ const Page1 = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </div>
     );

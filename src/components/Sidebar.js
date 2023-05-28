@@ -14,7 +14,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li class="nav-item mb-2 ">
-          <a class="nav-link " href="#" style={{color:"white"}}>
+          <a class="nav-link " href="#" style={{ color: "white" }}>
             <i class="fas fa-user font-weight-bold"></i>{" "}
             <span className="ml-3">Overview</span>
           </a>
