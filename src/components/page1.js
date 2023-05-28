@@ -144,34 +144,27 @@ const Page1 = () => {
           Available Courses
         </h3> */}
             <div style={{ overflowX: "hidden" }}>
-                <div
-                    className="text-center mt-5"
-                    style={{
-                        display: "grid",
-                        placeItems: "center",
-                        position: "relative",
-                        backgroundImage: `url(${BackgroundImage})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        backgroundSize: "100% 100%", // Update backgroundSize to "100% 100%"
-                        maxWidth: "25%",
-                        maxHeight: "14vh",
-                        fontWeight: "bolder",
-                        fontFamily: "cursive",
-                        fontSize: "29px",
-                        padding: "10px",
-                        color: "white",
-                        margin: "0 auto", // Center horizontally using auto margins
-                    }}
-                >
-                    <h3
+                <div className="text-center mt-5">
+                    <div
+                        className="d-flex justify-content-center align-items-center"
                         style={{
-                            display: "inline",
-                            padding: "10px 20px",
+                            position: "relative",
+                            backgroundImage: `url(${BackgroundImage})`,
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            backgroundSize: "100% 100%", 
+                            maxWidth: "30%",
+                            maxHeight: "15vh",
+                            fontWeight: "bolder",
+                            fontFamily: "cursive",
+                            fontSize: "29px",
+                            padding: "25px",
+                            color: "white",
+                            margin: "0 auto",
                         }}
                     >
-                        Available Courses
-                    </h3>
+                        <h3 className="p-2">Available Courses</h3>
+                    </div>
                 </div>
 
 
